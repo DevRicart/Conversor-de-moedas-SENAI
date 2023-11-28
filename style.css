@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;  
+    color: #000000;           
+    background-color:  #1C2F75;   
+    margin: 0;                
+    display: flex; 
+    flex-direction: column;              
+    align-items: center;       
+    margin-top: 50px;             
+}
+
+.container {   
+    background-color:  #A9B7E8;
+    width: 500px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.outer-container {
+    text-align: center;
+    
+}
+.social-button{
+    width: 60px;
+    height: 50px;
+    margin: 0 10px;   
+}
+
+.social-icons {
+    display: flex;                                     
+    justify-content: space-around;              
+    margin-top: 10px;   
+    border: 3px dashed black;
+    padding: 20px;
+    border-radius: 10px;                  
+}
+
+.social-icons img {
+    width: 30px;
+    transition: 0.4s;
+}
+
+.social-icons img:hover {
+    scale: 1.2;                                  
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.conversorMoedas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {    
+    display: flex;
+    margin-bottom: 5px;
+    color: black;     
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid  rgba(255, 255, 255, 0.333);                    
+    outline: none;                                    
+}
+
+.btns {
+    display: flex;
+    gap: 60px;
+
+    margin-top: 30px;
+}
+
+button {
+    width: 200px;                                                  
+    height: 40px;                                                                                   
+    font-size: 16px;                                                      
+    color: black;                                                              
+    background-color: #f0f0f0;                                                                        
+    border-radius: 10px;   
+    cursor: pointer;                 
+    transition: 0.2s;   
+    border: none;            
+}
+
+
+button:hover {
+    color: white;                                              
+    background-color: #22283D;    
+    border: none;                               
+}
+
+
+button:active {
+    box-shadow: inset 5px 5px 10px #d0d0d0, inset -5px -5px 10px #ffffff; 
+}  
+  
+.result-container {
+    margin-top: 10px;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 1000px;
+    margin-bottom: 10px;
+    border-top: 2px solid white;
+    padding: 10px;
+}
+
+a {
+    color: white;
+ }
+
+footer a:hover{
+    color: #A9B7E8;
+ } 
+
+ .result-container {
+    margin-top: 50px;
+    font-size: 35px;
+ }
+
+ /* ===== Remover setas do type: Number ===== */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
